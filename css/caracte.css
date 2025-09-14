@@ -1,0 +1,133 @@
+.App-header ol {
+    text-align: left;
+    margin: 130px auto 20px auto; 
+    max-width: 800px;
+    line-height: 2.1; 
+    padding-left: 60px;
+    color: rgb(3, 3, 3);
+    margin-top: -5px;
+
+}
+.Appi-logo5{
+    width: 400px;
+    margin: 130px auto 20px auto;
+    display: flex;
+    position: relative;
+}
+
+
+.App-header li {
+  margin: 0; 
+}
+.bot{
+  width: 50px;
+  position: relative;
+  margin-top: -590px;
+  margin-left: 1200px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+span{
+  top: 60px;
+}
+.bot:hover{
+  opacity: 0.3;
+
+}
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+}
+
+.cards-container{
+  background-color: #f9feff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 200px;
+  min-height: 100px;
+  padding-bottom: 90px;
+}
+.chat-box {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 400px;
+  height: 500px !important;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+}
+.chat-controls{
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+
+}
+.chat-header span{
+  flex: 1;
+  text-align: center;
+  margin: 30px 140px 90px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.bot-msg {
+  background: #e0e0ff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.user-msg {
+  background: #d1ffd1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin: 4px 0;
+  text-align: right;
+}
+
+.bot-msg-wrapper, .user-msg-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.robot-icon {
+  width: 40px
+}
+.text-input{
+  border-radius: 10px;
+  width: 290px;
+}
+.boton{
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 2vh;
+}
+.chat-box.maximized {
+  width: 90vw;  
+  height: 100vh;  
+}
+@media(max-width: 980px){
+
+footer{
+  margin-top: 690px !important;
+}
+}
+@media(max-width: 480px){
+  .App-header ol {
+    padding-left: 50px;
+
+}
+}
+body.dark-mode .App-header ol {
+  color: #ffffff;
+}

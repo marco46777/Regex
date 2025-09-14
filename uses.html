@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uses of Regular Expressions</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/uses.css">
+  <link rel="icon" href="imagen/RegularEx-removebg-preview.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="App">
+    <header>
+      <nav class="menu">
+        <ul>
+          <img src="/imagen/Reglogo.png" class="App-logo" alt="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+          <li onclick="window.location.href='characteristics.html'">Main Characteristics of Regex</li>
+          <li onclick="window.location.href='uses.html'" style="cursor: pointer;">Uses of Regular Expressions</li>
+          <li onclick="window.location.href='importance.html'">Importance of Regular Expressions</li>
+          <button id="toggle-theme" class="btn btn-secondary"><i class="bi bi-sun-fill" style="color:black;"></i> Light / <i class="bi bi-moon-fill" style="color:black;"></i> Dark</button>
+        </ul>
+        </ul>
+      </nav>
+    </header>
+
+  <section class="App-header1">
+    <h1>Uses of Regular Expressions</h1>
+    <img src="imagen/uses.png" class="Appi-logo" alt="logo" />
+    <ol>
+      <li><strong>Pattern matching</strong> – Finding specific words, numbers, or character sequences in text.</li>
+      <li><strong>Data validation</strong> – Checking if input matches a required format (e.g., emails, phone numbers, passwords).</li>
+      <li><strong>Search and replace</strong> – Replacing specific patterns in text (e.g., changing dates, cleaning data).</li>
+      <li><strong>Text parsing</strong> – Extracting specific pieces of information from large text files or logs.</li>
+      <li><strong>Syntax highlighting</strong> – Identifying keywords, numbers, or symbols in code editors.</li>
+      <li><strong>Data scraping</strong> – Extracting structured data from HTML, XML, or other text formats.</li>
+      <li><strong>Input sanitization</strong> – Removing unwanted characters or patterns from user input to prevent errors or security issues.</li>
+      <li><strong>Log analysis</strong> – Searching for error codes, IP addresses, or specific events in log files.</li>
+      <li><strong>Automated testing</strong> – Verifying output formats in test scripts and reports.</li>
+      <li><strong>String splitting</strong> – Dividing text into components based on complex delimiters.</li>
+    </ol>
+  </section>
+  <section class="chat">
+      <img src="/imagen/CHAT.png" alt="chat" class="bot" id="chat-icon" onclick="openChat()" style="cursor: pointer;">
+      <div id="chat-box" class="chat-box" style="display:none;">
+        <div class="chat-header">
+          <div class="chat-controls">
+            <button onclick="toggleMinimize()">_</button>
+            <button onclick="toggleMaximize()">⬜</button>
+            <button onclick="closeChat()">×</button>
+          </div>
+          <span id="chat-title">Beatrix Chat</span>
+        </div>
+        <div class="messages" id="messages"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Write a sentence..." class="text-input">
+          <button type="submit" class="boton">Send</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+<script src="js/chat.js"></script>
+<script src="js/dark.js"></script>
+
+</body>
+<footer>
+    <p>Create by MR</p>
+  </footer>
+</html>

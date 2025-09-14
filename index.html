@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regular Expressions</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" href="imagen/RegularEx-removebg-preview.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="App">
+    <header>
+      <nav class="menu">
+        <ul>
+          <img src="/imagen/Reglogo.png" class="App-logo" alt="logo" onclick="window.location.reload()" style="cursor: pointer;">
+          <li onclick="window.location.href='characteristics.html'">Main Characteristics of Regex</li>
+                    <li onclick="window.location.href='uses.html'">Uses of Regular Expressions</li>
+          <li onclick="window.location.href='importance.html'">Importance of Regular Expressions</li>
+        <button id="toggle-theme" class="btn btn-secondary"><i class="bi bi-sun-fill" style="color:black;"></i> Light / <i class="bi bi-moon-fill" style="color:black;"></i> Dark</button>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="App-header">
+      <h1>Regular expressions</h1>
+      <img src="imagen/REGX.jpg" class="Appi-logo" alt="logo">
+      <h2>
+        Regular expressions (often abbreviated as regex or regexp) are a powerful and flexible method for describing patterns in text.
+        They are sequences of characters that form a search pattern, which can be used to match, locate, validate, extract, replace,
+        or manipulate strings within larger bodies of text or data. Regular expressions are widely used in programming, data analysis,
+        and text processing because they allow complex operations to be performed with relatively concise syntax.
+      </h2>
+    </section>
+    <main>
+      <div class="cards-container">
+        <section class="Card">
+          <h3>Main Characteristics of Regex</h3>
+          <img src="/imagen/Reg.png" alt="Reg" class="Reg">
+          <p>
+            1.Define text patterns – They describe sequences of characters to search, match, or manipulate data.
+            2.Concise yet powerful syntax – With just a few symbols, you can create simple searches or very complex patterns....
+          </p>
+      <button onclick="window.location.href='characteristics.html'">Read more</button>
+
+        </section>
+
+        <section class="Card">
+          <h3>Uses of Regular Expressions</h3>
+          <img src="imagen/Uses.jpg" alt="Reg" class="Use">
+          <p>
+            1.Pattern matching – Finding specific words, numbers, or character sequences in text.
+            2.Data validation – Checking if input matches a required format (e.g., emails, phone numbers, passwords).
+            3.Search and replace – Replacing specific patterns in text (e.g., changing dates, cleaning data).....
+          </p>
+          <button onclick="window.location.href='uses.html'">Read more</button>
+        </section>
+
+        <section class="Card">
+          <h3>Importance of Regular Expressions</h3>
+          <img src="imagen/regi.png" alt="Reg" class="Regi">
+          <p>
+            Regular expressions are important because they provide a fast and efficient way to handle and analyze text.
+            They allow developers and analysts to quickly search, validate, and manipulate large amounts of data with minimal code. Re...
+          </p>
+          <button onclick="window.location.href= 'importance.html'">Read more</button>
+        </section>
+      </div>
+    </main>
+    <section class="chat">
+      <img src="/imagen/CHAT.png" alt="chat" class="bot" id="chat-icon" onclick="openChat()" style="cursor: pointer;">
+      <div id="chat-box" class="chat-box" style="display:none;">
+        <div class="chat-header">
+          <div class="chat-controls">
+            <button onclick="toggleMinimize()">_</button>
+            <button onclick="toggleMaximize()">⬜</button>
+            <button onclick="closeChat()">×</button>
+          </div>
+          <span id="chat-title">Beatrix Chat</span>
+        </div>
+        <div class="messages" id="messages"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Write a sentence..." class="text-input">
+          <button type="submit" class="boton">Send</button>
+        </form>
+      </div>
+    </section>
+
+<script src="js/chat.js"></script>
+
+<script src="js/dark.js"></script>
+
+
+</body>
+<footer>
+    <p>Create by MR</p>
+  </footer>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Characteristics of Regex</title>
+  <link rel="stylesheet" href="css/caracte.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" href="imagen/RegularEx-removebg-preview.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+            <img src="/imagen/Reglogo.png" class="App-logo" alt="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+          <li onclick="window.location.href='characteristics.html'">Main Characteristics of Regex</li>
+          <li onclick="window.location.href='uses.html'">Uses of Regular Expressions</li>
+        <li onclick="window.location.href='importance.html'">Importance of Regular Expressions</li>
+        <button id="toggle-theme" class="btn btn-secondary"><i class="bi bi-sun-fill" style="color:black;"></i> Light / <i class="bi bi-moon-fill" style="color:black;"></i> Dark</button>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="App-header">
+    <h1>Main Characteristics of Regex</h1>
+    <img src="imagen/ab.png" class="Appi-logo5" alt="logo" />
+    <ol>
+      <li><strong>Define text patterns</strong> – They describe sequences of characters to search, match, or manipulate data.</li>
+      <li><strong>Concise yet powerful syntax</strong> – With just a few symbols, you can create simple searches or very complex patterns.</li>
+      <li><strong>Pattern matching flexibility</strong> – Regex allows matching exact strings, optional characters, repetitions, ranges, and alternatives, giving precise control over what you want to find.</li>
+      <li><strong>Text validation</strong> – Commonly used to validate input such as emails, phone numbers, passwords, or dates to ensure they follow a specific format.</li>
+      <li><strong>Search and replace</strong> – Regex can find patterns within text and replace them with new content, useful for data cleaning or formatting.</li>
+      <li><strong>Support across programming languages</strong> – Most modern programming languages and tools, like JavaScript, Python, Java, and many text editors, support Regex.</li>
+      <li><strong>Efficiency</strong> – Regex can perform complex text operations quickly, even on large amounts of data when used properly.</li>
+      <li><strong>Escaping and special characters</strong> – Special characters like <code>.</code>, <code>*</code>, <code>+</code>, <code>?</code>, <code>[]</code>, <code>()</code> have specific meanings and can be escaped with <code>\</code> when used as literals.</li>
+    </ol>
+  </section>
+   <section class="chat">
+      <img src="/imagen/CHAT.png" alt="chat" class="bot" id="chat-icon" onclick="openChat()" style="cursor: pointer;">
+      <div id="chat-box" class="chat-box" style="display:none;">
+        <div class="chat-header">
+          <div class="chat-controls">
+            <button onclick="toggleMinimize()">_</button>
+            <button onclick="toggleMaximize()">⬜</button>
+            <button onclick="closeChat()">×</button>
+          </div>
+                <span id="chat-title">Beatrix Chat</span>
+        </div>
+        <div class="messages" id="messages"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Write a sentence..." class="text-input">
+          <button type="submit" class="boton">Send</button>
+        </form>
+      </div>
+    </section>
+  </div>
+<script src="js/chat.js"></script>
+<script src="js/dark.js"></script>
+
+
+</body>
+<footer>
+    <p>Create by MR</p>
+  </footer>
+</html>
